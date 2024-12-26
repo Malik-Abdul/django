@@ -121,3 +121,8 @@ Open the playground app, there is a views.py file
 A view function is a function that takes request and returns a response.
 It is a request handler handler, in some frameworks it is called action.
 Actulally view is not the UI that user can see, that part is template in django
+These are just request handlers or actions they are not the actual views.
+
+### template
+
+is the actula html that return to the client
