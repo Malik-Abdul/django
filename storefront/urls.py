@@ -24,4 +24,5 @@ urlpatterns = [
     path('about/', views.about),
     path('admin/', admin.site.urls),
     path('playground/', include('playground.urls')),
+    path('posts/', include('posts.urls')),
 ]+ debug_toolbar_urls()
