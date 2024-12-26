@@ -66,3 +66,58 @@ python manage.py runserver 9000
 
 The server will run at:
 http://localhost:9000
+
+## django-apps
+
+A Django project is essentially a collection of various apps, with each app offering specific functionality.
+Just like apps in mobile phone, each app provides a certain functionality.
+In project oppen settings and there are some apps
+
+```bash
+INSTALLED_APPS = [
+    'django.contrib.admin',
+    'django.contrib.auth',
+    'django.contrib.contenttypes',
+    'django.contrib.sessions',
+    'django.contrib.messages',
+    'django.contrib.staticfiles',
+]
+```
+
+Every Django project includes several default apps that provide essential functionality out of the box:
+
+Admin App: Offers an admin interface for managing the project's data.
+Auth App: Handles user authentication and authorization, including user login, logout, and permissions.
+ContentTypes App: Provides a framework for working with generic relationships and content types in the database.
+Sessions App: Manages sessions to store data about individual user sessions across requests.
+Messages App: Enables temporary notifications (e.g., success or error messages) to be displayed to users.
+StaticFiles App: Simplifies serving static files, such as images, CSS, and JavaScript.
+Each app contributes a specific piece of functionality to the project, allowing developers to build robust and scalable applications.
+
+We can also create our own apps here.
+Let we create our app with command
+
+```bash
+python manage.py startapp playground
+```
+
+Everytime you create an app, you need to register the app in settings
+
+```bash
+INSTALLED_APPS = [
+    'django.contrib.admin',
+    'django.contrib.auth',
+    'django.contrib.contenttypes',
+    'django.contrib.sessions',
+    'django.contrib.messages',
+    'django.contrib.staticfiles',
+    'playground'
+]
+```
+
+### views
+
+Open the playground app, there is a views.py file
+A view function is a function that takes request and returns a response.
+It is a request handler handler, in some frameworks it is called action.
+Actulally view is not the UI that user can see, that part is template in django
