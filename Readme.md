@@ -86,16 +86,16 @@ INSTALLED_APPS = [
 
 Every Django project includes several default apps that provide essential functionality out of the box:
 
-Admin App: Offers an admin interface for managing the project's data.
-Auth App: Handles user authentication and authorization, including user login, logout, and permissions.
-ContentTypes App: Provides a framework for working with generic relationships and content types in the database.
-Sessions App: Manages sessions to store data about individual user sessions across requests.
-Messages App: Enables temporary notifications (e.g., success or error messages) to be displayed to users.
-StaticFiles App: Simplifies serving static files, such as images, CSS, and JavaScript.
-Each app contributes a specific piece of functionality to the project, allowing developers to build robust and scalable applications.
+- Admin App: Offers an admin interface for managing the project's data.
+- Auth App: Handles user authentication and authorization, including user login, logout, and permissions.
+- ContentTypes App: Provides a framework for working with generic relationships and content types in the database.
+- Sessions App: Manages sessions to store data about individual user sessions across requests.
+- Messages App: Enables temporary notifications (e.g., success or error messages) to be displayed to users.
+- StaticFiles App: Simplifies serving static files, such as images, CSS, and JavaScript.
+- Each app contributes a specific piece of functionality to the project, allowing developers to build robust and scalable applications.
 
 We can also create our own apps here.
-Let we create our app with command
+Lets we create our app with command
 
 ```bash
 python manage.py startapp playground
@@ -123,6 +123,15 @@ It is a request handler handler, in some frameworks it is called action.
 Actulally view is not the UI that user can see, that part is template in django
 These are just request handlers or actions they are not the actual views.
 
+- Open the playground app, and you'll find a views.py file.
+- A view function is responsible for handling requests and returning responses. In some frameworks, it is referred to as an action.
+- A "view" is not what the user sees—that part is done by Django templates.
+- These functions just handle requests; they don't create what the user sees.
+
 ### template
 
-is the actula html that return to the client
+- Is the actual HTML returned to the client
+
+## Data Model
+
+Each app can have its own data model
