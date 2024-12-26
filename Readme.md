@@ -135,3 +135,23 @@ These are just request handlers or actions they are not the actual views.
 ## Data Model
 
 Each app can have its own data model
+
+### Migrations
+
+First of all make a model like: posts/models.py
+
+```bash
+python manage.py makemigrations
+python manage.py migrate
+```
+
+### Built in ORM
+
+```bash
+python manage.py shell
+from posts.models import Post
+p = Post()
+p.title = "My second post"
+p.save()
+Post.objects.all()
+```
