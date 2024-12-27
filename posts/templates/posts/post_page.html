@@ -1,0 +1,9 @@
+{% extends "layout.html" %} 
+  {% block title %} {{post.title}} {% endblock %} 
+{% block content %}
+  <h1>{{post.title}}</h1>
+  <p>{{post.date}}</p>
+  <p>{{post.body}}</p>
+  
+  <p>Baack to <a href="/posts">Posts</a> page</p>
+{% endblock %}
