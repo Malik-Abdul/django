@@ -26,7 +26,6 @@ body {
   min-height: 100vh;
   background-color: black;
   color: whitesmoke;
-  font-size: 3rem;
   display: flex;
   flex-flow: column;
 }
@@ -39,9 +38,7 @@ nav {
 }
 
 main {
-  flex-grow: 1;
-  display: grid;
-  place-content: center;
+  margin: 20px;
 }
 
 a {
